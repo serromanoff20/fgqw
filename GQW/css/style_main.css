@@ -1,0 +1,155 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+a{ 
+	text-decoration: none; 		/*Для ссылок запрещает подчёркивание*/
+
+}
+a:hover { 
+	text-decoration: underline;  /*определение стилей для псевдокласса hover*/
+}
+
+body {
+	width: 100%;
+	font-family: Sansita One, sans-serif;
+	font-size: 16px;
+	background-color: #f2f2f2;
+
+
+}
+
+.container{
+	position: absolute;
+	width: 100%;
+	max-width: 540px;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	left: 24em;
+	/*right: 24em;*/
+}
+
+.header{
+	position: relative;
+	display: flex;
+	vertical-align: center;
+	height: 84px;
+	background-color: #B0C4DE;
+}
+
+nav{
+	position: absolute;
+	height: 25px;
+	width: 474px;
+	top: calc(50% - 25px/2 - 1px);
+	text-align: center;
+
+}
+
+ul{
+	display: inline-flex;
+	padding: 0 10px 0 10px;
+	font-size: 14px;
+	cursor: pointer;
+	src: ;
+}
+
+#nav_ul_glavnaya{
+	margin-right: 4em;
+}
+
+.name_author{
+	position: absolute;
+	height: 25px;
+	right: 2em;
+	top: calc(50% - 25px/2 - 1px);
+	max-width: 12em;
+}
+
+.task_list{	
+	margin: 10px;
+	padding: 8px;
+	width: 460px;
+	border: 3px solid;
+	border-color: #B0C400;
+	box-shadow: 5px 5px 20px;
+}
+
+.head_task_list{
+	text-align: center;
+	background-color: #B0C4DE;
+}
+
+.todoItem{	
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 0 16px 0;
+	vertical-align: middle;
+	max-width: auto;
+}
+
+.todoItem .label, 
+.todoItem .textfield{
+	margin-right: auto;
+}
+
+.checkbox{
+	margin: 5px;
+}
+
+.completed {
+	color: lightgray;
+	/*text-decoration: line-through;*/
+
+}
+
+
+.textfield{
+	display: none;
+}
+
+.editing {
+    /*display: none;*/
+}
+
+.todoItem .textfield {
+    display: none;
+}
+
+.todoItem .edit {
+	display: block;
+}
+
+.todoItem .editing{
+	display: block;
+}
+
+button{	
+	width: 70px;
+	/*position: relative;
+	font-weight: 400;
+	
+	outline: none;
+	vertical-align: middle;*/
+}
+
+
+.todoItem button{
+	opacity: 0;
+	transition: all .2s;
+	text-decoration: none;
+	color: ;
+	
+}
+
+.todoItem:hover button{
+	opacity: 1;
+
+}
+
+#todoForma{
+	display: flex;
+	justify-content: space-between;
+}

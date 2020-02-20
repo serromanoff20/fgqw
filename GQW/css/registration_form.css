@@ -1,0 +1,98 @@
+a { 
+	text-decoration: none; 		/*Для ссылок запрещает подчёркивание*/
+
+}
+a:hover { 
+	text-decoration: underline;  /*определение стилей для псевдокласса hover*/
+}
+
+.inline h2{
+	width: 100%;
+	justify-content: center;
+	margin: 50px auto 0px;
+	background-color: #B0C4DE;
+	text-align: center;
+	border: 1px solid #B0C4DE;
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+	padding: 20px;
+}
+
+.alert-success{
+	width: 400px;
+	background-color: green;
+}
+
+.alert-unsuccess{
+	width: 400px;
+	background-color: red;
+}
+
+.main{
+	width: 100%; 
+	display: inline-flex;
+	justify-content: center;
+	
+}
+
+body{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font-size: 120%;	
+	font-family: Sansita One, sans-serif;
+	background-color: #f2f2f2;
+}
+
+.log{
+	margin: 10px, 0px, 10px, 0px;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+}
+
+.log label{
+	display: block;
+	margin: 3px;
+}
+
+.log input{
+	border-radius: 10px;
+	height: 30px;
+	padding: 5px, 10px;
+	font-size: 16px;
+	border: 1px solid gray;
+}
+
+form{
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	border:1px solid #B0C4DE;
+	border-radius: 0px, 0px, 10px, 10px;
+}
+
+p{
+	text-align: justify;
+	text-indent: 20px;			/*отступ первой строки в текстовом блоке*/
+	line-height: 2;				/*высота строки*/
+
+}
+
+.btn {
+	margin: 10px;
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+	padding: 25px;
+	font-size: 16px;
+	background-color: #B0C4DE;
+	border: none;
+	border-radius: 5px;
+	transition: 1s;
+}
+
+.btn:hover {
+	/*background-color: #fff;*/
+
+}
