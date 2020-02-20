@@ -21,7 +21,7 @@
 	<div class="container">
 		<div class="task_list">
 			<div class="head_task_list">
-				<h2>NOTEBOOK</h2>
+				<h2>NOTEBOOKs</h2>
 			</div>
 			
 			<div id="main_part">
