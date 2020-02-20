@@ -7,7 +7,7 @@
 		<title>Own Project</title>
 	</head>	
 	<body>
-		<?php include ('db.php')?>
+		<?php include ('db(back-end).php')?>
 		<div class="main">
 			<div class="inline">
 					<h2>Регистрация</h2>

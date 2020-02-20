@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	require('connect.php');
+	require('connect(back-end).php');
 	
 	$fullname = $_POST['fullnames'];
 	$mail = $_POST['mails'];

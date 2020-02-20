@@ -1,6 +1,6 @@
 <?php
 		
-		require('connect.php');
+		require('connect(back-end).php');
 
 		// $name = $_POST['names'];
 		$login = $_POST['logins'];

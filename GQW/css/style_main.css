@@ -3,11 +3,7 @@
 	margin: 0px;
 }
 
-a{ 
-	text-decoration: none; 		/*Для ссылок запрещает подчёркивание*/
-
-}
-a:hover { 
+#nav_ul_glavnaya:hover { 
 	text-decoration: underline;  /*определение стилей для псевдокласса hover*/
 }
 
@@ -15,6 +11,7 @@ body {
 	width: 100%;
 	font-family: Sansita One, sans-serif;
 	font-size: 16px;
+	/*color: #B0C4DE;*/
 	background-color: #f2f2f2;
 
 
@@ -48,16 +45,21 @@ nav{
 
 }
 
-ul{
+a{
 	display: inline-flex;
 	padding: 0 10px 0 10px;
 	font-size: 14px;
-	cursor: pointer;
-	src: ;
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover{
+	text-decoration: underline;
 }
 
 #nav_ul_glavnaya{
 	margin-right: 4em;
+	/*color: #B0C400;*/
 }
 
 .name_author{
@@ -74,7 +76,7 @@ ul{
 	width: 460px;
 	border: 3px solid;
 	border-color: #B0C400;
-	box-shadow: 5px 5px 20px;
+	box-shadow: 5px 5px 20px #B0C400;;
 }
 
 .head_task_list{
