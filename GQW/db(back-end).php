@@ -12,15 +12,13 @@
 		$query = "INSERT INTO users (fullname, mails, logins, passwords) VALUES ('$fullname','$mail', '$login', '$password')";
 		$result = mysqli_query($link, $query);
 
-		$_SESSION['fullname'] = $fullname;
-		$fullnameS = $_SESSION['fullname'];
-		
-		if ($result) {
+		if ($result) 
+		{
 			$smsg = "Регистрация прошла успешно, $fullnameS!";
 		}else 
 		{
 			$fsmsg = "Ошибка! Некорректно введены данные!";
 		}
-	} 
+	}
 	
 ?>

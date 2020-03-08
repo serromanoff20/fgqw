@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/registration_form.css">
+		<link rel="stylesheet" type="text/css" href="_css/registration_form.css">
 		<title>Own Project</title>
 	</head>	
 	<body>
@@ -31,10 +31,9 @@
 							</div>
 						<?php } ?>
 						
-						<a href="#">Главная</a>
 						<div class="log">
 							<label> ФИО: </label>
-							<input type="text" name="fullnames">
+							<input type="text" name="fullnames" value="">
 						</div>
 
 						<div class="log">
