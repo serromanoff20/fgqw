@@ -1,0 +1,36 @@
+.header{
+	position: relative;
+	display: flex;
+	height: 84px;
+	background-color: #B0C4DE;
+	justify-content: center;
+}
+
+nav{
+	position: absolute;
+	height: 100%;
+	max-width: 660px;
+	top: calc(50% - 25px/2 - 1px);
+	text-align: center;
+
+}
+
+nav a{
+	padding: 0 10px 0 10px;
+}
+
+.name_author{
+	position: absolute;
+	display: block;
+	height: 25px;
+	right: 2em;
+	top: calc(50% - 25px/2 - 1px);
+	max-width: 12em;
+}
+
+@media (max-width: 700px) {
+	.name_author{
+		display: none;
+	}
+	
+}

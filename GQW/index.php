@@ -14,7 +14,7 @@
 					<form method="POST">
 						
 						<?php 
-						if (isset($smsg)) 
+						if (isset($smsg))
 							{
 								?>
 								<div class='alert-success'>

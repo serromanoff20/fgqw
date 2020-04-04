@@ -7,7 +7,6 @@
 	$_SESSION['login'] = $login;
 	$loginS = $_SESSION['login'];
 
-
 ?>
 
 <!DOCTYPE html>
@@ -20,39 +19,37 @@
 	
 </head>
 <body>
-	<div><?php include ('header.php') ?></div>
+	<div><?php include ('W:\domains\GQWDesignPart\GQW\mainpage\header.php') ?></div>
 	<div class="container">
 		<div class="task_list">
 			
 			<div class="main_block_taskList">
 				<div class="column">
-					<p>Справочники:</p>
 					<div class="column_a">
-						<a href="#">Организации</a>
-						<a href="#">Сотрудники</a>
-						<a href="#">Кадровый учёт</a>
-						<a href="#">Начисления</a>
-						<a href="#">Выплаты</a>
+						<a href="http://gqwdesignpart/GQW/personal/forma_create.php">Создать сотрудника</a>
+						<a href="#">Приём на работу</a>
+						<a href="#">Коммандировка</a>
+						<a href="#">Кадровое перемещение</a>
+						
+						
 					</div>
 				</div>
 				
 				<div class="column">
-					<p>Создать:</p>
 					<div class="column_a">
-						<a href="#">Организацию</a>
-						<a href="http://gqwdesignpart/GQW/personal/forma_create.php">Сотрудника</a>
-						<a href="#">Начисление</a>
+						<a href="#">Список сотрудникоа</a>
+						<a href="#">Отпуск</a>
+						<a href="#">Кадровый учёт</a>
 						
 					</div>
 
 				</div>
 				
 				<div class="column">
-					<p>Отчёты:</p>
 					<div class="column_a">
-						<a href="#">Приходный кассовый ордер</a>
-						<a href="#">Рассходный кассовый ордер</a>
-						<a href="#">Расчетная ведомость (T-51)</a>
+						<a href="#">Табель</a>
+						<a href="#">Больничный</a>
+						<a href="#">Увольнение</a>
 						
 					</div>
 				</div>

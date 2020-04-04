@@ -6,6 +6,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="_css/registration_form.css">
+		<link rel="stylesheet" type="text/css" href="_css/style_main.css">
 		<title>Own Project</title>
 	</head>	
 	<body>
@@ -27,7 +28,7 @@
 						</div>
 						
 						<br>
-						<button class="btn" type="submit">Войти</button>
+						<button  type="submit">Войти</button>
 						<!-- <input type="submit" value="Зарегистрироватся" > -->
 						<a href="index.php">Зарегистрироватся</a>
 					</form>

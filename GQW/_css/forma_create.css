@@ -1,0 +1,65 @@
+.create_elem{
+	margin: 8px 20px 0 20px;
+}
+
+.blockFIO{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.blockFIO input{
+	width: 140px;
+	line-height: 18px;	
+}
+
+.entry_field, .input_entry{
+	margin: 5px;	
+	line-height: 18px;
+	width: 220px;
+}
+
+
+.blockMainInfo{
+	margin-left: 19%;
+}
+
+hr{
+	margin: 10px;
+	width: 50%;
+	margin-left: 25%;
+
+}
+
+.input_entry{
+	padding: 10px;
+	width: 150px;
+	border-radius: 40px;
+	
+}
+.blockFooter{
+	display: flex;
+	justify-content: space-between;
+}
+
+.blockFooter select{
+	margin: 5px;
+	width: 246px;
+	line-height: 18px;
+}
+
+button{
+	
+	width: 250px;
+	margin-left: 55%;
+	margin-right: 0px;
+	
+}
+
+.classError{
+	background-color: red;
+}
+
+.classSuccess{
+	background-color: green;	
+}

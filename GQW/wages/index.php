@@ -20,39 +20,35 @@
 	
 </head>
 <body>
-	<div><?php include ('header.php') ?></div>
+	<div><?php include ('W:\domains\GQWDesignPart\GQW\mainpage\header.php') ?></div>
 	<div class="container">
 		<div class="task_list">
 			
 			<div class="main_block_taskList">
 				<div class="column">
-					<p>Справочники:</p>
 					<div class="column_a">
-						<a href="#">Организации</a>
-						<a href="#">Сотрудники</a>
-						<a href="#">Кадровый учёт</a>
-						<a href="#">Начисления</a>
-						<a href="#">Выплаты</a>
+						<a href="#">Список сотрудников</a>
+						<a href="#">Выплата через банк</a>
+						<a href="#">Рассходный кассовый ордер</a>
+						
 					</div>
 				</div>
 				
 				<div class="column">
-					<p>Создать:</p>
 					<div class="column_a">
-						<a href="#">Организацию</a>
-						<a href="http://gqwdesignpart/GQW/personal/forma_create.php">Сотрудника</a>
-						<a href="#">Начисление</a>
+						<a href="#">Начисление зарплаты</a>
+						<a href="#">Вычеты по НДФЛ</a>
+						<a href="#">Расчетная ведомость (T-51)</a>
 						
 					</div>
 
 				</div>
 				
 				<div class="column">
-					<p>Отчёты:</p>
 					<div class="column_a">
+						<a href="#">Аванс</a>
+						<a href="#">Выплата через кассу</a>
 						<a href="#">Приходный кассовый ордер</a>
-						<a href="#">Рассходный кассовый ордер</a>
-						<a href="#">Расчетная ведомость (T-51)</a>
 						
 					</div>
 				</div>
