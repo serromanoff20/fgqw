@@ -15,7 +15,7 @@
 			<div class="inline">
 					<h2>Вход</h2>
 					<form action="mainpage/index_main.php" method="POST">
-						<a href="#">Главная</a>
+						<!-- <a href="#">Главная</a> -->
 						
 						<div class="log">
 							<label>Введите логин: </label>

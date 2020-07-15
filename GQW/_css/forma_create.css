@@ -48,18 +48,54 @@ hr{
 	line-height: 18px;
 }
 
-button{
-	
-	width: 250px;
-	margin-left: 55%;
-	margin-right: 0px;
+
+/*Форма создания организации*/
+.panel{
+	width: 60%;
+	margin-left: 20%;
+	/*text-align: center;*/
+}
+
+.td{
+	display: flex;
+	margin: 5px 0 5px 0;
+	padding: 5px 0 5px 0;
+	align-items: center;
+}
+
+.td select{
+	padding-left: 5px;
 	
 }
 
+.td ul{
+	width: 187px;
+}
+
+.third input{
+	width: 28vw;
+}
+
+.for input{
+	width: 4vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Вскакивающее сообщение*/
 .classError{
-	background-color: red;
+	background-color: #B0C400;
 }
 
 .classSuccess{
-	background-color: green;	
+	background-color: #c5d0e6;
 }

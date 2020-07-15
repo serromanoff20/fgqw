@@ -1,29 +1,33 @@
 <?php
+		//header('Location: mainpage/index_main.php');
+		session_start();
 		
+
 		require('connect(back-end).php');
 
 		$login = $_POST['logins'];
-		$password = $_POST['password_1'];		
+		$password = $_POST['password_1'];
+				
 		
-		if (!empty($login) and !empty($password))
+		if (isset($login) and isset($password))
 		{
 			$query = "SELECT * FROM users WHERE logins='$login' AND passwords='$password'";
 			$result2 = mysqli_query($link,$query) or die(mysqli_error($link));
-			
-			
+			$count = mysqli_fetch_row($result2);
 
-			if ($result2) {
-				$count = mysqli_fetch_row($result2);
-				
-				if ($count[3] == $login && $count[4] == $password){
-					$_SESSION['logins'] = ['logins'=>$login,'passwords'=>$password];
-					//header('');
+			if ($count[3] == $login){
+					$adres = 'mainpage/index_main.php';
 
-				} else {
-					echo "<script>
-						alert('Неверно заполнены поля! Вернитесь назад!');
+
+					
+					$_SESSION['log'] = $login;
+					
+					//setcookie('log', $login);
+			
+			} else {
+				echo "<script>
+						alert('Поля заполнены неверно! Возможно такого сотрудника не существует!');
 					</script>";
-				}
 			}
 		}
 ?>

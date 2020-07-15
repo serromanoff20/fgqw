@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+form div{
+	display: flex;
+	align-items: center;
+	margin: 5px 0 5px 0;
+}
+
+form ul{
+	
+	width: 9em;
+}
+
+.td select{
+	margin-right: 10px; 
+	width: 170px;
+}
+
+.classError{
+	background-color: #B0C400;
+}
+
+.classSuccess{
+	background-color: #c5d0e6;
+}
+
+input[type="button"]{
+	margin: 3px;
+	padding: 5px;
+	width: 180px;
+	height: 46px;
+	border: 0;
+	border-radius: 10px;
+	background-color: #D3D3D3;
+	cursor: pointer;
+}
+
+.for_tr table, .for_tr tr, .for_tr td{
+	border: 2px solid black;
+	
+}

@@ -9,12 +9,12 @@
 	
 	if (!empty($login) && !empty($password)) 
 	{
-		$query = "INSERT INTO users (fullname, mails, logins, passwords) VALUES ('$fullname','$mail', '$login', '$password')";
+		$query = "INSERT INTO users (id, fullname, mails, logins, passwords, prava) VALUES (NULL, '$fullname','$mail', '$login', '$password', 'root')";
 		$result = mysqli_query($link, $query);
 
 		if ($result) 
 		{
-			$smsg = "Регистрация прошла успешно, $fullnameS!";
+			$smsg = "Регистрация прошла успешно, $login!";
 		}else 
 		{
 			$fsmsg = "Ошибка! Некорректно введены данные!";

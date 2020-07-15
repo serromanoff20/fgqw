@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="_css/registration_form.css">
+		<link rel="stylesheet" type="text/css" href="http://GQWDesignPart/GQW/_css/style_main.css">
 		<title>Own Project</title>
 	</head>	
 	<body>

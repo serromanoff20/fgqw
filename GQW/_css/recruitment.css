@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+table, .holyday, tr, td{
+
+	/*border: 1px solid red;*/
+	margin: 10px;
+/*	width: 100%;*/
+}
+
+table{
+	width: 90%;
+}
+
+.accrual .input{
+	
+	border-radius: 0;
+}
+
+.accrual ul{
+	width: 2em;
+}
+
+.type_accural{
+	width: 25em;
+}
+
+.size_salary, .holyday{
+	width: 9em;
+}
+
+.select{
+	
+	width: 220px;
+}
+
+.footer{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.footer ul{
+	width: 187px;
+}
+
+.footer input{
+	margin-left: 30px;
+}
+
+
+
+.classError{
+	background-color: #B0C400;
+}
+
+.classSuccess{
+	background-color: #c5d0e6;
+}

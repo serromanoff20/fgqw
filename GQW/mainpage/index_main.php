@@ -1,14 +1,4 @@
-<?php 
-	session_start();
-
-	require('W:\domains\GQWDesignPart\GQW\connect(back-end).php');
-
-	$login = $_POST['logins'];
-	$_SESSION['login'] = $login;
-	$loginS = $_SESSION['login'];
-
-
-?>
+<?php include ('W:\domains\GQWDesignPart\GQW\header.php');?>
 
 <!DOCTYPE html>
 <html>
@@ -20,7 +10,6 @@
 	
 </head>
 <body>
-	<div><?php include ('header.php') ?></div>
 	<div class="container">
 		<div class="task_list">
 			
@@ -28,20 +17,20 @@
 				<div class="column">
 					<p>Справочники:</p>
 					<div class="column_a">
-						<a href="#">Организации</a>
-						<a href="#">Сотрудники</a>
-						<a href="#">Кадровый учёт</a>
+						<a href="list_org/list_org.php">Организации</a>
+						
+						<!-- <a href="#">Кадровые документы</a>
 						<a href="#">Начисления</a>
-						<a href="#">Выплаты</a>
+						<a href="#">Выплаты</a> -->
 					</div>
 				</div>
 				
 				<div class="column">
 					<p>Создать:</p>
 					<div class="column_a">
-						<a href="#">Организацию</a>
+						<a href="create_organization/forma_create.php">Организацию</a>
 						<a href="http://gqwdesignpart/GQW/personal/forma_create.php">Сотрудника</a>
-						<a href="#">Начисление</a>
+						<a href="http://gqwdesignpart/GQW/wages/payroll/payroll.php">Начисление</a>
 						
 					</div>
 

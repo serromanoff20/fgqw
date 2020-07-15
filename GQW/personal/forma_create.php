@@ -1,11 +1,4 @@
-<?php 
-	require('W:\domains\GQWDesignPart\GQW\connect(back-end).php');
-
-	$login = $_POST['logins'];
-	$_SESSION['login'] = $login;
-	$loginS = $_SESSION['login'];
-?>
-
+<?php include ('W:\domains\GQWDesignPart\GQW\header.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +9,6 @@
 	
 </head>
 <body>
-	<div><?php include ('W:\domains\GQWDesignPart\GQW\mainpage\header.php') ?></div>
 	<div class="container">
 		<div class="task_list">
 			<p>Создание сотрудника:</p>
@@ -25,14 +17,15 @@
 
 				<form class="create_elem" action="" method="POST">
 					<div class="blockFIO">
-						<input type="text"class="entry_field" name="LastName_employee" placeholder="Фамилия">
+						<b style='color:red'>*</b><input type="text"class="entry_field" name="LastName_employee" placeholder="Фамилия">
 						<input type="text" class="entry_field" name="FirstName_employee" placeholder="Имя">
 						<input type="text"class="entry_field" name="FatherName_employee" placeholder="Отчество">
 					</div>
 					
 					<div class="blockFooter">
 						
-						<select class="entry_field" name="Department" id="">
+						<b style='color:red'>*</b>
+						<select class="entry_field" name="Department">
 							<option value="1">Администрация</option>
 							<option value="2">Бухгалтерия</option>
 						</select>
@@ -43,7 +36,7 @@
 
 					<hr>
 					<div class="blockMainInfo">
-						<input type="date" class="input_entry" name="date_birth" value="2002-01-01" max="2002-01-01">
+						<b style='color:red'>*</b><input type="date" class="input_entry" name="date_birth" value="2002-01-01" max="2002-01-01">
 						<select class="input_entry" name="gender" size="1">
 							<option value="Муж.">Муж.</option>
 							<option value="Жен.">Жен.</option>
@@ -52,7 +45,21 @@
 					</div>
 					<hr>
 					<div class="blockFooter">
-						<input type="text" name="Organization" class="entry_field" placeholder="Организация">
+					<?php include('W:\domains\GQWDesignPart\GQW\query_toOrg.php');
+					?>
+						<select name="selectOrg">
+							<option value="<?php echo $res[0] ?>">
+								<?php 
+									if($res){
+										echo $res[1];
+									} else {
+										echo "Ошибка";
+									};
+								?>
+								
+							</option>
+							
+						</select>
 						<input type="text" name="id_employee" class="entry_field" placeholder="Таб.номер" value='<?php ?>'>
 					</div>
 					<button type="submit">Создать сотрудника</button>

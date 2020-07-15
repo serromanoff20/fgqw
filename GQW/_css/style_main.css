@@ -39,10 +39,8 @@ body {
 }
 
 .container{
-	/*position: relative;*/
-	width: 46em;
+	width: 48em;
 	display: flex;
-	
 	margin: auto;
 	
 }
@@ -72,7 +70,7 @@ label{
 
 input, select {
 	font-size: 14px;
-	padding: 8px 0 8px 24px;
+	padding: 8px 0 8px 20px;
     border-radius: 40px;
     border: 1px solid lightgray;
     
@@ -81,38 +79,48 @@ input, select {
 button{	
 	margin: 3px;
 	padding: 5px;
-	width: 90px;
+	width: 180px;
+	height: 46px;
 	border: 0;
 	border-radius: 10px;
 	background-color: #B0C4DE;
 	cursor: pointer;
 	
 }
-/*
-select{
+
+button:hover{
+	background-color: #c5d0e6;
+}
+
+input[type="button"]{
+	margin: 3px;
 	padding: 5px;
-	width: 140px;
-	border-color: lightgray;
-	text-align: center;
+	width: 180px;
+	height: 46px;
+	border: 0;
 	border-radius: 10px;
-}*/
+	background-color: #D3D3D3;
+	cursor: pointer;
+}
 
 .main_block_taskList{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: flex-start;
 }
 
 .column{
 	display: flex;
-	width: 150px;
+	/*width: 150px;*/
 	flex-wrap: wrap;
 }
 
 .column_a{
 	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .column_a a{
 	padding: 10px 0 10px 0;
+	width: 185px;
 }
